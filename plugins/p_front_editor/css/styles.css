@@ -1,0 +1,117 @@
+#fe_context_menu{
+    display:none;
+    border: 1px #333 solid;
+    background-color: #E5E5E5;
+    min-height: 20px;
+    padding: 10px;
+    margin: 5px;
+    position: fixed;
+}
+
+#fe_context_menu_link{
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+}
+
+#fe_editor_block{
+    display: none;
+    position: fixed;
+    border: 2px #003399 solid;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+}
+
+.fe_small_screen{    
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 560px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.fe_full_screen{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fe_cancel, .fe_minimize, .fe_maximize{
+    cursor: pointer;
+    float: right;
+    height: 16px;
+    margin: 3px 3px 0 0;
+    opacity: 0.7;
+    padding: 3px;
+    width: 16px;
+}
+
+.fe_cancel{
+    background: url("/plugins/p_front_editor/images/close_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+.fe_minimize{
+    background: url("/plugins/p_front_editor/images/minimize_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: none;
+}
+
+.fe_maximize{
+    background: url("/plugins/p_front_editor/images/maximize_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+#fe_editor_body{
+    margin-top: 45px;
+    padding: 5px;
+}
+
+.fe_tab_content{
+    padding: 10px;
+    border: 1px #555 solid;
+    background-color: #fff;
+    overflow: scroll;
+    max-height: 400px;  
+}
+
+.fe_buttons_block{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.fe_textarea{
+    width: 100%;
+    height: 150px;
+}
+
+.fe_title_span{
+    color: #375e93;
+    font-weight: bold;
+}
+
+#fe_error_msg, #fe_succes_msg{
+    display: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 5px 20px;
+    width:80%;
+    position: absolute;
+}
+
+#fe_error_msg{    
+    color: red;
+    background-color: #FFDD99;
+    border: 1px red solid;  
+}
+#fe_succes_msg{    
+    color: green;
+    background-color: #AEFFA4;
+    border: 1px green solid;   
+}
+
+
+
+
+
