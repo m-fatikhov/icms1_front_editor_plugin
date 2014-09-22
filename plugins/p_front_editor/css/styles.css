@@ -20,6 +20,7 @@
     border: 2px #003399 solid;
     background-color: #E5E5E5;
     border-radius: 8px;
+    z-index: 10000;
 }
 
 .fe_small_screen{    
