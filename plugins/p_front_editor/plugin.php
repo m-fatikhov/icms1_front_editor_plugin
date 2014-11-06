@@ -26,7 +26,7 @@ public function __construct(){
         $this->info['title']            = 'Фронт-редактор';
         $this->info['description']      = 'Позволяет редактировать контент с фронтэнда без перезагрузки страницы';
         $this->info['author']           = 'Marat Fatikhov';
-        $this->info['version']          = '1.0.0';        
+        $this->info['version']          = '1.0.1';        
 
         // Настройки по-умолчанию
         
