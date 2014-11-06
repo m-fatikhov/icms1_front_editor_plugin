@@ -14,6 +14,7 @@
         <li><a href="#fe_description"><span>Описание</span></a></li>
         <li><a href="#fe_title"><span>Название, теги</span></a></li>
         <li><a href="#fe_seo"><span>СЕО-параметры</span></a></li>
+        <li><a href="#fe_img"><span>Изображение</span></a></li>
     </ul>
  
     <form name="fe_con_edit_form">
@@ -38,7 +39,7 @@
             <span class="fe_title_span">Мета-описание:</span>
             <textarea name="meta_desc" class="fe_textarea">{$item.meta_desc}</textarea>
         </div>
-    </div>
+    </div>    
     <div class="fe_buttons_block">
     <input type="hidden" name="id" value="{$item.id}">
     <input type="hidden" name="component" value="content">
@@ -48,5 +49,12 @@
     <input type="button" onclick="hideEditorBlock();" name="fe_cansel_button" value="Отмена">
     </div>
 </form>
-  </div>    
+    <div id="fe_img">
+        <div class="fe_tab_content" style="margin-top: -45px; position: relative; z-index: 10000; height: 300px;">
+            <iframe id="fe_img_iframe" src="/plugins/p_front_editor/upload_article_img.php?article_id={$item.id}" width="95%" height="95%" scrolling="no">
+            
+            </iframe>
+        </div>
+    </div>    
+  </div>
     

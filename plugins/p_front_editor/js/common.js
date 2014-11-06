@@ -105,6 +105,8 @@ function saveForm(form, close) {
             });
             //закрываем див с сообщением
             $("#fe_succes_msg").fadeOut(3000);
+            //изменяем  csrf  в дочернем ифрейме для загрузки изображения
+            document.getElementById("fe_img_iframe").contentWindow.document.getElementById("csrf_token").value = data.item['csrf_token'];
         }
 
     });

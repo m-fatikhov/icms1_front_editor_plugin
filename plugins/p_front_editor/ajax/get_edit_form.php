@@ -2,7 +2,7 @@
 /*******************************************************************************/
 //                          InstantCMS v1.10.4                                 //
 //                      http://www.instantcms.ru/                              //                                                    //
-//                  плагин "Фронт-редактор" v.1.0.0                            //
+//                  плагин "Фронт-редактор" v.1.0.1                            //
 //                        (p_front_editor)                                     //
 //                     written by Marat Fatikhov                               //
 //                       E-mail: f-marat@mail.ru                               //
@@ -55,6 +55,11 @@ $item = $inDB->get_fields('cms_'.$component, "id = {$item_id}", '*');
 if(!$item){
     cmsCore::jsonOutput(array('error' => true, 'html' => ' Не получена запись для редактирования!')); 
     cmsCore::halt();
+}
+
+//изображение статьи для формы редактирования статей
+if($component == 'content'){
+    $item['image'] = (file_exists(PATH.'/images/photos/medium/article'.$item['id'].'.jpg') ? 'article'.$item['id'].'.jpg' : '');
 }
 
 //html-код формы
